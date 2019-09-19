@@ -1,0 +1,90 @@
+{
+  "success": true,
+  "data": {
+    "topicList": [
+      {
+        "id": 1,
+        "title": "社会热点",
+        "imgUrl": "//upload.jianshu.io/collections/images/261938/man-hands-reading-boy-large.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
+      },
+      {
+        "id": 2,
+        "title": "手手绘",
+        "imgUrl": "//upload.jianshu.io/collections/images/21/20120316041115481.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
+      }
+    ],
+    "articleList": [
+      {
+        "id": 1,
+        "imgUrl": "//upload-images.jianshu.io/upload_images/3301720-db890fabf626e0ac.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240",
+        "title": "简书一年，我找到了一份好工作",
+        "desc": "这是我的亲身经历，没有虚构，虽然它听起来不像真的。 2017年11月7日 星期二 晴 说起来很惭愧，在简书写了一年的文，至今，我还是原来的我，既..."
+      },
+      {
+        "id": 2,
+        "imgUrl": "//upload-images.jianshu.io/upload_images/3459828-fdf30bf7e301a6e9.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240",
+        "title": "《二十岁的年纪，做八十岁想起来都会嘴角上扬的事》",
+        "desc": "二十岁出头，正好处在一个尴尬的年纪。似乎看透了生活，实质却依旧单纯；似乎应有尽有，实质却一无所有；内心身怀雄心壮志，却又不得不脚踏实地。 身处二..."
+      },
+      {
+        "id": 3,
+        "imgUrl": "//upload-images.jianshu.io/upload_images/1417131-52d1bdc6e19156e5.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240",
+        "title": "我删掉了游戏《王者荣耀》",
+        "desc": "文／沐丞 最近身边很多人都在玩手游《王者荣耀》，有的人在聚餐等上菜的时候也不忘晚上一局，每天中午午休的时候也有不少同事都在拼命厮杀。有时候在咖啡..."
+      },
+      {
+        "id": 4,
+        "imgUrl": "https://upload-images.jianshu.io/upload_images/3343569-0fda192e70b8da44.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240",
+        "title": "盐洲岛 | 银河星空和日出风光",
+        "desc": "夜很黑。 身边不时传来呼呼的声音，前方似乎有个黑影一闪而过。 我扛着三脚架，三脚架上有相机和镜头，心里盘算着假如遇到危险了，要不要挥舞着三脚架还..."
+      },
+      {
+        "id": 5,
+        "imgUrl": "//upload-images.jianshu.io/upload_images/2962565-16b1db1d328f352e.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240",
+        "title": "人物画：怎么在一个月内从零基础到入门",
+        "desc": "先放一张最近的画，不然你说我骗你。 我是零基础，完全零基础，特别零基础。一直非常非常喜欢画画，可是从来没正经上过课跟过老师学，原因很简单——穷！..."
+      }
+    ],
+    "recommendList": [
+      {
+        "id": 1,
+        "imgUrl": "http://cdn2.jianshu.io/assets/web/banner-s-club-aa8bdf19f8cf729a759da42e4a96f366.png"
+      },
+      {
+        "id": 2,
+        "imgUrl": "http://cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png"
+      },
+      {
+        "id": 3,
+        "imgUrl": "http://cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png"
+      },
+      {
+        "id": 4,
+        "imgUrl": "http://cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png"
+      }
+    ],
+    "writerList": [
+      {
+        "id": 1,
+        "avatar": "//upload.jianshu.io/users/upload_avatars/14715425/e0668349-8c75-43db-8a9d-c388e5f00d0d.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+        "name": "简书钻首席小管家",
+        "letters": 189.3,
+        "like": 223
+      },
+      {
+        "id": 2,
+        "avatar": "//upload.jianshu.io/users/upload_avatars/3136195/484e32c3504a.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+        "name": "梅拾璎",
+        "letters": 123,
+        "like": 80
+      },
+      {
+        "id": 3,
+        "avatar": "//upload.jianshu.io/users/upload_avatars/3343569/6940ee65-036f-4b7a-9935-5915d9b67d14.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+        "name": "吴晓布",
+        "letters": 695.5,
+        "like": 224
+      }
+    ]
+  }
+}

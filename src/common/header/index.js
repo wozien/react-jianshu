@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { actionCreators } from './store';
 import { CSSTransition } from 'react-transition-group';
 import {
@@ -39,7 +40,15 @@ class Header extends Component {
         <SearchInfo onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <SearchTitle>
             热门搜索
-            <SearchInfoSwitch onClick={() => handleChangePage(page, totalPage)}>
+            <SearchInfoSwitch onClick={() => handleChangePage(page, totalPage, this.spinIcon)}>
+              <i
+                className="iconfont spin"
+                ref={icon => {
+                  this.spinIcon = icon;
+                }}
+              >
+                &#xe851;
+              </i>
               换一批
             </SearchInfoSwitch>
           </SearchTitle>
@@ -55,10 +64,12 @@ class Header extends Component {
   }
 
   render() {
-    const { focused, handleInputFocus, handleInputBlur } = this.props;
+    const { focused, list, handleInputFocus, handleInputBlur } = this.props;
     return (
       <HeaderWrapper>
-        <Logo href="/" />
+        <Link to="/">
+          <Logo />
+        </Link>
         <Nav>
           <NavItem className="left active">首页</NavItem>
           <NavItem className="left">下载App</NavItem>
@@ -70,11 +81,11 @@ class Header extends Component {
             <CSSTransition in={focused} timeout={200} classNames="slide">
               <NavSearch
                 className={focused ? 'focused' : ''}
-                onFocus={handleInputFocus}
+                onFocus={() => handleInputFocus(list)}
                 onBlur={handleInputBlur}
               ></NavSearch>
             </CSSTransition>
-            <i className={focused ? 'iconfont focused' : 'iconfont'}>&#xe614;</i>
+            <i className={focused ? 'iconfont focused zoom' : 'iconfont zoom'}>&#xe614;</i>
             {this.getSearchInfo()}
           </SearchWrapper>
         </Nav>
@@ -104,8 +115,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    handleInputFocus() {
-      dispatch(actionCreators.getList());
+    handleInputFocus(list) {
+      !list.size && dispatch(actionCreators.getList());
       dispatch(actionCreators.searchFocus());
     },
     handleInputBlur() {
@@ -117,7 +128,9 @@ const mapDispatchToProps = dispatch => {
     handleMouseLeave() {
       dispatch(actionCreators.mouseLeave());
     },
-    handleChangePage(page, totalPage) {
+    handleChangePage(page, totalPage, spinIcon) {
+      const angle = +spinIcon.style.transform.replace(/[^0-9]/gi, '');
+      spinIcon.style.transform = `rotate(${angle + 360}deg)`;
       if (page < totalPage) {
         dispatch(actionCreators.changePage(page + 1));
       } else {

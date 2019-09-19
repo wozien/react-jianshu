@@ -8,8 +8,7 @@ export const HeaderWrapper = styled.div`
   z-index: 1;
 `;
 
-export const Logo = styled.a`
-  display: block;
+export const Logo = styled.div`
   position: absolute;
   left: 0;
   top: 0;
@@ -47,7 +46,7 @@ export const NavItem = styled.div`
 export const SearchWrapper = styled.div`
   position: relative;
   float: left;
-  .iconfont {
+  .zoom {
     position: absolute;
     right: 5px;
     bottom: 5px;
@@ -111,6 +110,14 @@ export const SearchTitle = styled.div`
   line-height: 20px;
   font-size: 14px;
   color: #969696;
+  .spin {
+    display: block;
+    float: left;
+    font-size: 12px;
+    margin-right: 2px;
+    transition: all 0.2s linear;
+    transform-origin: center center;
+  }
 `;
 
 export const SearchInfoSwitch = styled.span`
