@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { actionCreators } from '../store';
 import { ListItem, ListInfo, LoadMore } from '../style';
 
-class List extends Component {
+class List extends PureComponent {
   render() {
     const { list, getMoreList } = this.props;
     return (
       <div>
         {list.map((item, index) => {
           return (
-            <Link to="/detail" key={index}>
+            <Link to={'/detail/' + item.get('id')} key={index}>
               <ListItem>
                 <img className="pic" src={item.get('imgUrl')} alt="" />
                 <ListInfo>
